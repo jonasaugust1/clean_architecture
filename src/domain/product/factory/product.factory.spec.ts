@@ -2,7 +2,7 @@ import ProductFactory from "./product.factory";
 
 describe("Product factory unit test", () => {
   it("should create a proct type a", () => {
-    const product = ProductFactory.create("a", "Product A", 1);
+    const product = ProductFactory.create( "Product A", "a", 1);
 
     expect(product.id).toBeDefined();
     expect(product.name).toBe("Product A");
@@ -11,7 +11,7 @@ describe("Product factory unit test", () => {
   });
 
   it("should create a proct type b", () => {
-    const product = ProductFactory.create("b", "Product B", 1);
+    const product = ProductFactory.create("Product B", "b", 1);
 
     expect(product.id).toBeDefined();
     expect(product.name).toBe("Product B");

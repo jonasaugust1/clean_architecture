@@ -5,8 +5,8 @@ import ProductB from "../entity/product-b";
 
 export default class ProductFactory {
   public static create(
-    type: string,
     name: string,
+    type: string,
     price: number
   ): ProductInterface {
     switch (type) {
